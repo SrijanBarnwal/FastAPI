@@ -2,8 +2,8 @@ from datetime import timedelta
 from fastapi.security import OAuth2PasswordRequestForm
 from fastapi import APIRouter, Depends, HTTPException,status
 from sqlalchemy.orm import Session
-from blog.hashing import Hash
-from blog import schemas,database,models,token
+from app.blog.hashing import Hash
+from app.blog import schemas,database,models,token
 
 
 router=APIRouter(
